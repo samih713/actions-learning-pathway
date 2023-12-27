@@ -1,0 +1,15 @@
+# name of work-flow i assume kek
+name: hellow-world
+
+# events that trigger this work-flow
+on: push 
+
+# define what happens when the workflow runs, by
+# creating a job
+jobs:
+  hello-world-job:
+    runs-on: ubuntu-latest # git-hub hosted runner (can also do self-hosted)
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v3
+    - run: echo "$(cat hello_world.txt)"
