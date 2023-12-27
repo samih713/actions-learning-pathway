@@ -1,5 +1,5 @@
 # name of work-flow i assume kek
-name: hellow-world
+name: hello-world
 
 # events that trigger this work-flow
 on: push 
